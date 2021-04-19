@@ -32,3 +32,16 @@ section {
     justify-content: center; /* center on y-axis */
     align-items: center; /* center on x-axis */
 }
+.experience-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.experience-wrapper div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
