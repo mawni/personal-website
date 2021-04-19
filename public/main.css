@@ -1,0 +1,34 @@
+* {
+    /* everything here is applied to all elements */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* made all the padding and margin 0, to allow for custom design */
+}
+.about-section h2,h3 {
+    /* applies to h2 and h3 elements within the about-section only */
+    margin: 8px 0;
+}
+h1 {
+    /* applies to all header 1s */
+    font-family: Arial, Helvetica, sans-serif;  /* if Arial not available, use Helvetica, else use sans-serif */
+    color:cornflowerblue;
+    border-bottom: 1px solid royalblue;
+    display: inline-block;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+    h2, h3, ul { /* applies to header2 and unordered list */
+    /* top & bottom     left & right */
+    margin: 8px 0;
+}
+section {
+    height: 100vh; /* each section occupies entireity of window */
+    display: flex; /* flexible container */
+    flex-direction: column; /* lay out content in column format */
+    justify-content: center; /* center on y-axis */
+    align-items: center; /* center on x-axis */
+}
