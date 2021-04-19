@@ -1,13 +1,59 @@
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
 * {
     /* everything here is applied to all elements */
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     /* made all the padding and margin 0, to allow for custom design */
+    scroll-behavior: smooth;
+}
+main {
+    background: whitesmoke;
+    color: black;
+    background: url("./img/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg");
+    background-size:cover;
+}
+.nav-header {
+    all: unset; /* remove all pre-existing CSS attributes */
+    font-size: 1.25rem;
+}
+nav {
+    width:100%; /* cover entire width of screen */
+    position: fixed; /* keep the nav bar at the top */
+    background: black;
+    height: 60px;
+}
+.navbar {
+    height: 100%; /* this means the height of the navbar div will take up 100% of space of the nav element (which encloses the navbar div */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem; /* top & bottom    left & right */
+    /* note _rem is a relative measurement (relative to default overall document font size = 16px). */
+    /* 2rem = 2*rem px */
+    align-items: center;
+}
+.nav-links {
+    width: 30%;
+}
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.nav-links a {
+    text-decoration: none;
+}
+.navbar * {
+    color:white;
+    font-weight:100;
 }
 .about-section h2,h3 {
     /* applies to h2 and h3 elements within the about-section only */
     margin: 8px 0;
+    text-align: center;
 }
 h1 {
     /* applies to all header 1s */
@@ -27,6 +73,7 @@ h1 {
 }
 section {
     height: 100vh; /* each section occupies entireity of window */
+    width:100%;
     display: flex; /* flexible container */
     flex-direction: column; /* lay out content in column format */
     justify-content: center; /* center on y-axis */
@@ -44,4 +91,22 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+.interests-section {
+    flex-direction: row;
+}
+.interests-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* wrap elements across page */
+}
+.interests-wrapper div {
+    /* top right bottom left */
+    margin: 0 20px 0 20px;
+    font-size: 1rem;
+}
+.map {
+    width: 20vw;
+    height: 20vw;
+    /* sets map width and height to 20% of viewport's (the device's) equivalent */
 }

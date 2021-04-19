@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -27,62 +27,85 @@
     <link rel="stylesheet" href="./main.css">
     <title>Mustafa Awni</title>
   </head>
-  <body style="background-color:white; color:black">
-    <section class="about-section">
-      <noscript>You need to enable JavaScript to run this app.</noscript>
-      <div id="root"></div>
-      <!-- title -->
-      <h1>Hello there! <br> My name is Mustafa.</h1>
-      <!-- subtitles -->
-      <h3>Software Engineering student at the University of Melbourne.</h3>
-      <div>
-        <a href="https://github.com/mawni"><img style="margin-top: 10px" width="40" height="40" src="/public/github-icon.png" alt="GitHub"></a>
-        <a href="https://linkedin.com/in/mustafaawni"><img width="47" height="40" src="/public/LI-In-Bug.png" alt="LinkedIn"></a>
+  <body>
+    <nav>
+      <!-- this has a navbar at the top -->
+      <div class="navbar">
+        <h1 class="nav-header">Mustafa Awni</h1>
+        <div class="nav-links">
+          <ul>
+            <!-- hrefs are IDs for the sections -->
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#interest">Interests</a></li>
+          </ul>
+        </div>
       </div>
-    </section>
-    <section>
-      <div class="experience-wrapper">
+    </nav>
+    <main>
+      <section id="about" class="about-section">
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+        <!-- title -->
+        <h1>Hello there! <br> My name is Mustafa.</h1>
+        <!-- subtitles -->
+        <h3>Software Engineering student at the University of Melbourne.</h3>
+        <div>
+          <a href="https://github.com/mawni"><img style="margin-top: 10px" width="40" height="40" src="/public/img/github-icon.png" alt="GitHub"></a>
+          <a href="https://linkedin.com/in/mustafaawni"><img width="47" height="40" src="/public/img/LI-In-Bug.png" alt="LinkedIn"></a>
+        </div>
+      </section>
+      <section id="experience" class="experience-section">
         <h1>Experience</h1>
-        <div>
-          <h2>Deloitte Melbourne - Cyber Risk</h2>
-          <ul>
-            <li>Penetration Testing & Ethical Hacking</li>
-            <li>Cloud Security & Threat Modelling</li>
-            <li>Third Party Risk Management</li>
-          </ul>
+        <div class="experience-wrapper">
+          <div>
+            <h2>Deloitte Melbourne - Cyber Risk</h2>
+            <ul>
+              <li>Penetration Testing & Ethical Hacking</li>
+              <li>Cloud Security & Threat Modelling</li>
+              <li>Third Party Risk Management</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Melbourne University Racing Motorsports</h2>
+            <ul>
+              <li>Junior Mechanical Engineer</li>
+              <li>Junior Software Engineer</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h2>Melbourne University Racing Motorsports</h2>
-          <ul>
-            <li>Junior Mechanical Engineer</li>
-            <li>Junior Software Engineer</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="project-wrapper">
+      </section>
+      <section id="project" class="project-section">
         <h1>Projects</h1>
-        <ul>
-          <li>project1</li>
-          <li>project2</li>
-        </ul>  
-      </div>
-    </section>
-    <section>
-      <div class="interests-wrapper">
-        <h1>Interests</h1>
-        <h2>Where I want to be</h2>
-        <iframe style="margin-left: 5px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6179.790003829813!2d-2.2915653054364222!3d53.461046947949946!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c930e96df4455fe!2sOld%20Trafford!5e1!3m2!1sen!2sau!4v1618842533501!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </section>
-    
-    <!--
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <div class="project-wrapper">
+          <ul>
+            <li>project1</li>
+            <li>project2</li>
+          </ul>  
+        </div>
+      </section>
+      <section id="interest" class="interests-section">
+        <h1>Next Travel Destinations</h1>
+        <div class="interests-wrapper">
+          <div>
+            <h4>Basel, Switzerland</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d72458.79641014432!2d7.583191729560965!3d47.55288026817924!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479049c72769304f%3A0x361ceb70f36d8a90!2sBasel%2C%20Switzerland!5e0!3m2!1sen!2sau!4v1618848843423!5m2!1sen!2sau" class="map" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div>
+            <h4>Neuschwanstein Castle, Germany</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1903.9269464077704!2d10.749395743221154!3d47.556905181403664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc8a6866bd39dbba3!2sNeuschwanstein%20Castle!5e0!3m2!1sen!2sau!4v1618848815443!5m2!1sen!2sau" class="map" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+      
+      <!--
+        You can add webfonts, meta tags, or analytics to this file.
+        The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        To begin the development, run `npm start` or `yarn start`.
+        To create a production bundle, use `npm run build` or `yarn build`.
+      -->
+    </main>
   </body>
 </html>
