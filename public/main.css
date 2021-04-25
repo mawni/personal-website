@@ -1,6 +1,9 @@
 @viewport {
     width: device-width;
     zoom: 1.0;
+    /* helpful link for font scaling (especially good for mobile devices)
+    https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/
+    */
 }
 * {
     /* everything here is applied to all elements */
